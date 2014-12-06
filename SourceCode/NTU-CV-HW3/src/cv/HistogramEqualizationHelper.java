@@ -100,7 +100,7 @@ public class HistogramEqualizationHelper {
 				 int data = pixelData.get(header+(y*width+x)*1);
 				 int oldValue = result.get(data);
 				 int newValue = oldValue + 1;
-				 result.replace(data, newValue);
+				 result.put(data, newValue);
 			 }
 		 }
 		 return result;
